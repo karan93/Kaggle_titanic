@@ -45,5 +45,7 @@ full_graph = all_survived['Age'].plot(kind='hist' ,bins = np.arange(0,max(train_
 full_graph.set_xticks(np.arange(0,81,5))
 all_dead['Age'].plot(kind='hist',bins = np.arange(0,max(train_data['Age'])+bin_width,bin_width) , ec='black', label ='All dead' ,alpha = 0.4)
 full_graph.legend()
-
 #all elder persons survived , infants have high survival rate
+
+
+
