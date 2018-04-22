@@ -25,4 +25,7 @@ male_passengers = {}
 
 train_data[['Pclass','Survived']].groupby(['Pclass']).describe()
 train_data[['Sex','Survived']].groupby(['Sex']).describe()
-train_data['Survived','Embarked'].groupby(['Embarked']).describe()
+train_data[['Embarked','Survived']].groupby(['Embarked']).describe()
+X['total_members'] = X['SibSp']+X['Parch']
+
+train_data[['total_members','Survived']].groupby(['total_members']).describe()
